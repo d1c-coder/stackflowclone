@@ -1,0 +1,99 @@
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+body {
+  margin: 0;
+  line-height: normal;
+}
+.home {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  width: 119px;
+  height: 29px;
+}
+.cloned-by-ayelabola,
+.companies,
+.questions,
+.teams,
+.users {
+  position: absolute;
+  top: 563px;
+  left: 33px;
+  display: flex;
+  align-items: center;
+  width: 168px;
+  height: 65px;
+}
+.companies,
+.questions,
+.teams,
+.users {
+  top: 225px;
+  left: 18px;
+  width: 119px;
+  height: 29px;
+}
+.companies,
+.questions,
+.users {
+  top: 50px;
+  left: 10px;
+}
+.companies,
+.users {
+  top: 88px;
+}
+.companies {
+  top: 126px;
+}
+.menu-icon,
+.vector-icon {
+  cursor: pointer;
+  position: absolute;
+  overflow: hidden;
+}
+.vector-icon {
+  height: 58.33%;
+  width: 83.33%;
+  top: 20.83%;
+  right: 8.33%;
+  bottom: 20.83%;
+  left: 8.33%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.menu-icon {
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: 3px;
+  left: 172px;
+  width: 24px;
+  height: 24px;
+}
+.iphone-13-pro-max-1 {
+  position: relative;
+  background-color: var(--color-white);
+  width: 211px;
+  height: 100%;
+  overflow: hidden;
+  opacity: 0;
+  max-width: 90%;
+  text-align: left;
+  font-size: var(--font-size-lg);
+  color: var(--color-black);
+  font-family: var(--font-segoe-ui);
+}
+.iphone-13-pro-max-1.animate {
+  animation: 0.25s ease 0s 1 normal forwards slide-in-left;
+}
